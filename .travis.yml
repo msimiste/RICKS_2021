@@ -1,7 +1,8 @@
 os: linux
 language: python
 sudo: false
-script - python main.py
+script:
+    - python main.py
 
 after_success:
     - bash <(curo -s https://codecov.io/bash)
